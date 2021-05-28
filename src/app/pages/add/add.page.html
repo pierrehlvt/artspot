@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Ajouter</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="placeForm" (ngSubmit)="save()">
+    <ion-item>
+      <ion-label position="floating">Nom</ion-label>
+      <ion-input formControlName="name"></ion-input>
+    </ion-item>
+    <div class="form-error" *ngIf="getForm().name.invalid && (getForm().name.dirty || submited)">
+      Vous devez saisir un nom d'au moins 3 caractères
+    </div>
+
+    <ion-item>
+      <ion-label position="floating">Image</ion-label>
+      <ion-input formControlName="image"></ion-input>
+    </ion-item>
+    <div class="form-error" *ngIf="getForm().image.invalid && (getForm().image.dirty || submited)">
+      Vous devez saisir une URL d'image valide
+    </div>
+
+    <div>
+      <ion-button (click)="takePicture()">Prendre une photo</ion-button>
+
+      <div *ngIf="nativePicture">
+        <img [src]="nativePicture" alt="Preview">
+      </div>
+    </div>
+
+    <ion-item>
+      <ion-label>Note</ion-label>
+      <ion-range min="1" max="5" pin="true" snaps="true" color="secondary" formControlName="note">
+        <ion-label slot="start">1</ion-label>
+        <ion-label slot="end">5</ion-label>
+      </ion-range>
+    </ion-item>
+    <div class="form-error" *ngIf="getForm().note.invalid && (getForm().note.dirty || submited)">
+      Vous devez choisir une note entre 1 et 5
+    </div>
+
+    <ion-button type="submit" expand="full">Enregistrer</ion-button>
+  </form>
+
+</ion-content>
+
