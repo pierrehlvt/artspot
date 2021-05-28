@@ -1,0 +1,48 @@
+{
+  "oeuvre": [
+    {
+      "id": 1,
+      "name": "Une oeuvre d'art",
+      "picture": "https://magazine.interencheres.com/wp-content/uploads/2020/03/vol-spectaculaires-artbis-750x562.jpg",
+      "location": {
+        "latitude": 50.6321028,
+        "longitude": 3.0619513
+      },
+      "rate": 2,
+      "createdAt": "2021-05-28"
+    },
+    {
+      "id": 2,
+      "name": "Une deuxieme oeuvre d'art",
+      "picture": "https://www.artblr.com/upload/userfiles/images/Mona_lisa.jpg",
+      "location": {
+        "latitude": 50.6321028,
+        "longitude": 3.0619513
+      },
+      "rate": 1,
+      "createdAt": "2021-05-28"
+    },
+    {
+      "name": "Test add",
+      "picture": "https://www.radiolac.ch/wp-content/uploads/2020/04/cover-detournement-art.png",
+      "location": {
+        "latitude": 50.6321028,
+        "longitude": 3.0619513
+      },
+      "rate": 4,
+      "createdAt": "2021-05-28T14:14:44.900Z",
+      "id": 3
+    },
+    {
+      "name": "Test add 2",
+      "picture": "https://www.legendarte.shop/pimages/5-curiosita-su-alcune-opere-d-arte-molto-celebri-big-10-495.jpg",
+      "location": {
+        "latitude": 49.469849599999996,
+        "longitude": 1.0715135999999998
+      },
+      "rate": 3,
+      "createdAt": "2021-05-28T14:45:36.805Z",
+      "id": 4
+    }
+  ]
+}

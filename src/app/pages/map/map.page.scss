@@ -1,0 +1,71 @@
+
+ion-header {
+  margin-bottom: -4px;
+}
+
+ion-content {
+  margin: 0;
+  padding: 0;
+}
+
+#map {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+h3 {
+  text-align: center;
+}
+
+:host ::ng-deep .mapboxgl-popup-content {
+  text-align: center;
+  background-color: #C3EDE9;
+  color: black;
+  border-radius: 10%;
+}
+
+:host ::ng-deep .address0 {
+  margin-bottom: 0;
+}
+
+:host ::ng-deep .address1 {
+  margin-top: 0;
+}
+
+:host ::ng-deep h3 {
+  margin-left: 0;
+  margin-right: 0;
+  display: inline;
+}
+
+:host ::ng-deep p {
+  margin-left: 0;
+  margin-right: 0;
+  display: inline;
+}
+
+
+:host ::ng-deep .mapboxgl-popup-close-button {
+  display: none;
+}
+
+:host ::ng-deep .mapboxgl-popup-anchor-top .mapboxgl-popup-tip,
+:host ::ng-deep .mapboxgl-popup-anchor-top-left .mapboxgl-popup-tip,
+:host ::ng-deep .mapboxgl-popup-anchor-top-right .mapboxgl-popup-tip {
+  border-bottom-color: #FF0000;
+}
+
+:host ::ng-deep .mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip,
+:host ::ng-deep .mapboxgl-popup-anchor-bottom-left .mapboxgl-popup-tip,
+:host ::ng-deep .mapboxgl-popup-anchor-bottom-right .mapboxgl-popup-tip {
+  border-top-color: #FF0000;
+}
+
+:host ::ng-deep .mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+  border-right-color: #FF0000;
+}
+
+:host ::ng-deep .mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+  border-left-color: #FF0000;
+}
